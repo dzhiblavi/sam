@@ -18,7 +18,7 @@ namespace detail
 struct condition_variable_impl : detail::service_member
 {
   BOOST_SAM_DECL condition_variable_impl(net::execution_context &ctx,
-                                         int concurrency_hint = BOOST_ASIO_CONCURRENCY_HINT_DEFAULT);
+                                         int concurrency_hint = BOOST_SAM_ASIO_CONCURRENCY_HINT_DEFAULT);
 
   condition_variable_impl(condition_variable_impl const &) = delete;
   condition_variable_impl(condition_variable_impl &&lhs) noexcept
