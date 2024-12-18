@@ -39,7 +39,7 @@ if(BOOST_SAM_BUILD_INLINE)
     unset(CMAKE_FOLDER)
   endif()
 else()
-  find_package(Boost REQUIRED system)
+    # find_package(Boost REQUIRED system)
 endif()
 
 if(NOT BOOST_SUPERPROJECT_VERSION)
